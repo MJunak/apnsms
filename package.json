@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/MJunak/apnsms/issues"
   },
-  "homepage": "https://github.com/MJunak/apnsms#readme"
+  "homepage": "https://github.com/MJunak/apnsms#readme",
+  "dependencies": {
+    "apn": "^2.1.5",
+    "restify": "^5.0.0"
+  }
 }
