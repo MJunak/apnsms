@@ -1,0 +1,24 @@
+{
+  "name": "apnsms",
+  "version": "1.1.0",
+  "description": "A microservice used to send Pushnotifications to Apple apns service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MJunak/apnsms.git"
+  },
+  "keywords": [
+    "microservice",
+    "apns",
+    "apple"
+  ],
+  "author": "Marius Junak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MJunak/apnsms/issues"
+  },
+  "homepage": "https://github.com/MJunak/apnsms#readme"
+}
