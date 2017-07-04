@@ -11,8 +11,6 @@ var options = {
 };
 
 
-
-
 var server = restify.createServer();
 server.get('/notification', respond);
 server.post('/notification', respond);
@@ -22,7 +20,7 @@ function respond(req,res,next)
 {
     var apnProvider = new apn.Provider(options);
 
-    let deviceToken = "Token";
+  
     var note = new apn.Notification();
 
     note.expiry = Math.floor(Date.now() / 1000) + 3600; // Expires 1 hour from now.
@@ -32,7 +30,7 @@ function respond(req,res,next)
     note.payload = {'messageFrom': 'John Appleseed'};
     note.topic = "<your-app-bundle-id>";
 
-    apnProvider.send(note, deviceToken).then( (result) => {
+    apnProvider.send(note, "asd").then( (result) => {
     // see documentation for an explanation of result
     });
 
